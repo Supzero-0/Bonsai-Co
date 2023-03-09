@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/*Global font*/
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,22 +13,32 @@ body {
     margin-right: auto;
 }
 
-ul {
+/*Navigation Bar Customisation*/
+
+nav {
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 10px;
 }
 
-li {
-    float: left;
+/*Removes bullet points*/
+
+nav ul {
+    display: flex;
+    list-style: none;
 }
 
+/*Links Customisation*/
+
 a {
+    color: #6f7866;
+    text-decoration: none;
     padding: 8px;
 }
 
+/*Titles Customisation*/
 
 h1 {
     padding: 0.3cm;
@@ -35,17 +47,45 @@ h1 {
     font-size: 3rem;
 }
 
-h2#description {
-    padding: 0.6cm;
-    margin: 0.7cm;
+h2 {
+    padding: 0.3cm;
+    margin: 0.4cm;
     line-height: 26px;
 }
 
-p {
+h3 {
+    padding: 0 0 10px 45px;
+}
+
+/*Sections Customisation*/
+
+.sec-1 p {
     padding: 0.6cm;
     margin: 0.7cm;
     inline-size: 70%;
     font-size: medium;
+}
+
+div.first {
+    width: 100%;
+    padding: 50px;
+    background: #f6f6f6;
+}
+
+
+section.sec-2 {
+    margin-top: 200px;
+    margin-bottom: 130px;
+}
+
+section.sec-4 {
+    margin-top: 130px;
+    margin-bottom: 200px;
+}
+
+
+.sec-2 li {
+    list-style: none;
 }
 
 .sec-5 {
@@ -53,19 +93,52 @@ p {
     padding: 10px;
 }
 
-section.sec-2 {
-    padding: 0.9cm;
-    margin: 0.7cm;
-
-}
 
 div.spring {
+    padding: 0.6cm;
+    margin: 0.7cm;
     display: flex;
     align-items: start;
     justify-content: start;
     inline-size: 50%;
 }
 
+
+div.summer {
+    padding: 0.6cm;
+    margin: 0.7cm;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    inline-size: 50%;
+}
+
+
+div.fall {
+    padding: 0.6cm;
+    margin: 0.7cm;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    inline-size: 50%;
+}
+
+div.winter {
+    padding: 0.6cm;
+    margin: 0.7cm;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    inline-size: 50%;
+}
+
+/*Footer Customisation*/
+
 footer {
     text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    padding: 20px;
 }
