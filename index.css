@@ -69,3 +69,65 @@ div.spring {
 footer {
     text-align: center;
 }
+
+/* Css for carrousel */
+
+.sec-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+#carrousel {
+    width: 625px;
+    height: 800px;
+    border: solid 4px #fff;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+#carrouselContainer {
+    width: 625px;
+    height: 800px;
+}
+
+.picture {
+    width: 625px;
+    height: 800px;
+    display: inline-block;
+    background-size: cover;
+}
+
+.btn {
+    margin: auto;
+    width: 100px;
+    cursor: pointer;
+}
+
+#btnLeft {
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+#btnRight {
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+#btnLeft:hover {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+#btnRight:hover {
+    transform: rotate(0deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+/* End of carrousel */
