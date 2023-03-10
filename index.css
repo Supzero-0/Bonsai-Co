@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Global font*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+/*Navigation Bar Customisation*/
+
+nav {
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/*Removes bullet points*/
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+/*Links Customisation*/
+
+a {
+    color: #6f7866;
+    text-decoration: none;
+    padding: 8px;
+}
+
+/*Titles Customisation*/
+
+h1 {
+    padding: 0.3cm;
+    margin: 3cm;
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    padding: 0.3cm;
+    margin: 0.4cm;
+    line-height: 26px;
+}
+
+h3 {
+    padding: 0 0 10px 45px;
+}
+
+/*Sections Customisation*/
+
+.sec-1 p {
+    padding: 0.6cm;
+    margin: 0.7cm;
+    inline-size: 70%;
+    font-size: medium;
+}
+
+div.first {
+    width: 100%;
+    padding: 50px;
+    background: #f6f6f6;
+}
+
+
+section.sec-2 {
+    margin-top: 200px;
+    margin-bottom: 130px;
+}
+
+section.sec-4 {
+    margin-top: 130px;
+    margin-bottom: 200px;
+}
+
+
+.sec-2 li {
+    list-style: none;
+}
+
+.sec-5 {
+    text-align: center;
+    padding: 10px;
+}
+
+
+div.spring {
+    padding: 0.6cm;
+    margin: 0.7cm;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    inline-size: 50%;
+}
+
+
+div.summer {
+    padding: 0.6cm;
+    margin: 0.7cm;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    inline-size: 50%;
+}
+
+
+div.fall {
+    padding: 0.6cm;
+    margin: 0.7cm;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    inline-size: 50%;
+}
+
+div.winter {
+    padding: 0.6cm;
+    margin: 0.7cm;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    inline-size: 50%;
+}
+
+/*Footer Customisation*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    padding: 20px;
+}
+
+/* Css for carrousel */
+
+.sec-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+#carrousel {
+    width: 625px;
+    height: 800px;
+    border: solid 4px #fff;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+#carrouselContainer {
+    width: 625px;
+    height: 800px;
+}
+
+.picture {
+    width: 625px;
+    height: 800px;
+    display: inline-block;
+    background-size: cover;
+}
+
+.btn {
+    margin: auto;
+    width: 100px;
+    cursor: pointer;
+}
+
+#btnLeft {
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+#btnRight {
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+#btnLeft:hover {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+#btnRight:hover {
+    transform: rotate(0deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+/* End of carrousel */
