@@ -3,10 +3,19 @@
     padding: 0;
 }
 
+/*CSS variables*/
+
+:root{
+    --main-font:Arial, Helvetica, sans-serif;
+    --nav-color: #f3f3f3;
+    --link-color: #606C5A;
+    --description-color: #f6f6f6;
+}
+
 /*Global font*/
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--main-font);
 }
 
 .logo {
@@ -17,7 +26,7 @@ body {
 
 nav {
     border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
+    background-color: var(--nav-color);
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -33,10 +42,14 @@ nav ul {
 /*Links Customisation*/
 
 a {
-    color: #6f7866;
+    color: var(--link-color);
     text-decoration: none;
     padding: 8px;
 }
+
+li a:hover {
+    background-color: #d0d0d0;
+  }
 
 /*Titles Customisation*/
 
@@ -69,7 +82,7 @@ h3 {
 div.first {
     width: 100%;
     padding: 50px;
-    background: #f6f6f6;
+    background: var(--description-color);
 }
 
 
@@ -83,6 +96,10 @@ section.sec-4 {
     margin-bottom: 200px;
 }
 
+section.sec-5 {
+    background: #eee;
+    padding: 60px;
+  }
 
 .sec-2 li {
     list-style: none;
@@ -132,9 +149,33 @@ div.winter {
     inline-size: 50%;
 }
 
-/*Footer Customisation*/
+/*Contact custom*/
+
+input[type=email] {
+    width: 20%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+
+button{
+    background-color: #606C5A;
+    color: white;
+    padding: 12px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+  }
+
+
+  /*Footer Customisation*/
 
 footer {
+    background: #eee;
     text-align: center;
     padding: 20px;
 }
