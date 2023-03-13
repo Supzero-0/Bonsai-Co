@@ -45,3 +45,8 @@ function hide() {
         btnRight.style.visibility = "visible";
     }
 }
+
+
+
+
+
