@@ -45,3 +45,6 @@ function hide() {
         btnRight.style.visibility = "visible";
     }
 }
+
+//Dark mode feature//
+
