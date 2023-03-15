@@ -15,23 +15,62 @@ document.body.onload = function () {
     hide();
 }
 
-btnLeft.onclick = function () {
-    if (position > -nbrImg + 1) {
-        position--;
-        container.style.transform = "translate(" + position * 625 + "px)";
-        container.style.transition = "all 0.5s ease";
-        hide();
+if (window.matchMedia("(max-width: 768px)").matches) {
+    btnLeft.onclick = function () {
+        if (position > -nbrImg + 1) {
+            position--;
+            container.style.transform = "translate(" + position * 312.5 + "px)";
+            container.style.transition = "all 0.5s ease";
+            hide();
+        }
+    }
+
+    btnRight.onclick = function () {
+        if (position < 0) {
+            position++;
+            container.style.transform = "translate(" + position * 312.5 + "px)";
+            container.style.transition = "all 0.5s ease";
+            hide();
+        }
+    }
+} else if (window.matchMedia("(max-width: 1224px)").matches) {
+    btnLeft.onclick = function () {
+        if (position > -nbrImg + 1) {
+            position--;
+            container.style.transform = "translate(" + position * 468.75 + "px)";
+            container.style.transition = "all 0.5s ease";
+            hide();
+        }
+    }
+
+    btnRight.onclick = function () {
+        if (position < 0) {
+            position++;
+            container.style.transform = "translate(" + position * 468.75 + "px)";
+            container.style.transition = "all 0.5s ease";
+            hide();
+        }
+    }
+} else {
+    btnLeft.onclick = function () {
+        if (position > -nbrImg + 1) {
+            position--;
+            container.style.transform = "translate(" + position * 625 + "px)";
+            container.style.transition = "all 0.5s ease";
+            hide();
+        }
+    }
+
+    btnRight.onclick = function () {
+        if (position < 0) {
+            position++;
+            container.style.transform = "translate(" + position * 625 + "px)";
+            container.style.transition = "all 0.5s ease";
+            hide();
+        }
     }
 }
 
-btnRight.onclick = function () {
-    if (position < 0) {
-        position++;
-        container.style.transform = "translate(" + position * 625 + "px)";
-        container.style.transition = "all 0.5s ease";
-        hide();
-    }
-}
 
 function hide() {
     if (position == -nbrImg + 1) {
