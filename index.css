@@ -284,3 +284,19 @@ footer p {
 }
 
 /* End of carrousel */
+
+
+/*Back To Top*/
+
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+.hidden {
+    display: none;
+    opacity: 0%;
+}
