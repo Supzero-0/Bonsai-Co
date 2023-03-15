@@ -225,6 +225,14 @@ button {
 }
 
 
+/*Contact js error msg*/
+#error-msg {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 /*Footer Customisation*/
 
 footer {
