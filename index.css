@@ -56,12 +56,6 @@ li a:hover {
 
 /*Titles Customisation*/
 
-h1 {
-    padding: 0.3cm;
-    margin: 3cm;
-    text-align: center;
-    font-size: 3rem;
-}
 
 h2 {
     padding: 2rem;
@@ -77,21 +71,19 @@ h3 {
 /* Home Custom */
 
 .homeContainer {
-    position: relative;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
-}
-
-.imgHome {
+    background-image: url(images/bonsai-co.jpg);
     background-size: cover;
-    width: 100vw;
+    background-position: center;
     height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.titleHome {
-    position: absolute;
-    top: 300px;
-    left: 600px;
-    margin: 0;
+h1 {
+    text-align: center;
+    font-size: 3rem;
 }
 
 /*Sections Customisation*/
@@ -337,6 +329,12 @@ footer p {
     .fall,
     .winter {
         flex-direction: column;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .entretienText {
+        opacity: 1.5;
     }
 
     h3 {
@@ -348,8 +346,24 @@ footer p {
         flex-direction: column;
     }
 
+    .spring {
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(255, 255, 255, 0.8)), url(images/bonsai-printemps.jpg);
+    }
+
+    .summer {
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(255, 255, 255, 0.8)), url(images/bonsai-ete.jpeg);
+    }
+
+    .fall {
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(255, 255, 255, 0.8)), url(images/bonsai-automne.jpg);
+    }
+
+    .winter {
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(255, 255, 255, 0.8)), url(images/bonsai-hiver.jpg);
+    }
+
     .entretienImg {
-        height: 35vh;
+        display: none;
     }
 
     .sec-3 {
@@ -377,31 +391,6 @@ footer p {
 }
 
 @media screen and (min-device-width : 768px) and (max-width : 1224px) {
-
-    .spring,
-    .summer,
-    .fall,
-    .winter {
-        flex-direction: column;
-        padding: 3rem;
-    }
-
-    h3 {
-        padding: 0;
-        text-align: center;
-    }
-
-    div.wilders {
-        flex-direction: column;
-    }
-
-    .entretienImg {
-        height: 35vh;
-    }
-
-    .sec-3 {
-        padding: 4rem;
-    }
 
     #carrousel {
         width: 468.75px;
