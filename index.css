@@ -121,12 +121,6 @@ div.wilders {
     margin-bottom: 130px;
 }
 
-.entretienText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: max-content;
-}
 
 .spring,
 .summer,
@@ -204,10 +198,18 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 13px;
-  }
+}
 
 
-  /*Footer Customisation*/
+/*Contact js error msg*/
+#error-msg {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*Footer Customisation*/
 
 footer {
     background: #eee;
