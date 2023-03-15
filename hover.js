@@ -1,13 +1,13 @@
-let pictures = ['one', 'two', 'three', 'four', ];
+let paragraph = ['one', 'two', 'three', ];
 
-let x = document.querySelectorAll('.entretienText');
-for (let i = 0; i < pictures.length; i++) {
-  x[i].style.opacity = "0";
+let txt = document.querySelectorAll('.description');
+for (let i = 0; i < paragraph.length; i++) {
+  txt[i].style.opacity = "0";
 
-  document.getElementById('pic-' + pictures[i]).addEventListener('mouseover', ()=> {
-    for (let i = 0; i < pictures.length; i++) {
-      x[i].style.opacity = "1";
-      x[i].style.transition = "all 0.5s ease";
+  document.getElementById('pic-' + paragraph[i]).addEventListener('mouseover', ()=> {
+    for (let i = 0; i < paragraph.length; i++) {
+      txt[i].style.opacity = "1";
+      txt[i].style.transition = "all 0.5s ease";
     }
   })
 };

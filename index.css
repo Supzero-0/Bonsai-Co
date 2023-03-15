@@ -102,6 +102,15 @@ h3 {
     font-size: medium;
 }
 
+.sec-4 h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    display: flex;
+    justify-content: center;
+}
+
+.sec-4 p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .first {
     width: 100%;
     background: var(--description-color);
@@ -114,6 +123,20 @@ div.wilders {
     justify-content: space-around;
 }
 
+
+/* Team JS hover */
+
+.description p {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+  
+.description:hover p {
+    opacity: 1
+}
+  
+
+
 /* Entretien Customs */
 
 .sec-2 {
@@ -121,6 +144,12 @@ div.wilders {
     margin-bottom: 130px;
 }
 
+.entretienText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: max-content;
+}
 
 .spring,
 .summer,
@@ -165,7 +194,7 @@ div.wilders {
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3)
 }
 
-
+/*Img team*/
 
 .teamImg {
     width: 100px;
