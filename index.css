@@ -5,8 +5,8 @@
 
 /*CSS variables*/
 
-:root{
-    --main-font:Arial, Helvetica, sans-serif;
+:root {
+    --main-font: Arial, Helvetica, sans-serif;
     --nav-color: #f3f3f3;
     --link-color: #606C5A;
     --description-color: #f6f6f6;
@@ -29,6 +29,8 @@ nav {
     background-color: var(--nav-color);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-size: larger;
     padding: 10px;
 }
 
@@ -49,7 +51,7 @@ a {
 
 li a:hover {
     background-color: #d0d0d0;
-  }
+}
 
 /*Titles Customisation*/
 
@@ -64,10 +66,31 @@ h2 {
     padding: 0.3cm;
     margin: 0.4cm;
     line-height: 26px;
+    text-align: center;
 }
 
 h3 {
     padding: 0 0 10px 45px;
+}
+
+
+/* Home Custom */
+
+.homeContainer {
+    position: relative;
+}
+
+.imgHome {
+    background-size: cover;
+    width: 100vw;
+    height: 92vh;
+}
+
+.titleHome {
+    position: absolute;
+    top: 300px;
+    left: 600px;
+    margin: 0;
 }
 
 /*Sections Customisation*/
@@ -79,74 +102,86 @@ h3 {
     font-size: medium;
 }
 
-div.first {
+.first {
     width: 100%;
-    padding: 50px;
     background: var(--description-color);
 }
 
 
-section.sec-2 {
+div.wilders {
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Entretien Customs */
+
+.sec-2 {
     margin-top: 200px;
     margin-bottom: 130px;
 }
 
-section.sec-4 {
-    margin-top: 130px;
-    margin-bottom: 200px;
+.entretienText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: max-content;
 }
 
-section.sec-5 {
-    background: #eee;
-    padding: 60px;
-  }
-
-.sec-2 li {
-    list-style: none;
+.spring,
+.summer,
+.fall,
+.winter {
+    padding: 0.6cm;
+    margin: 0.7cm;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: auto;
 }
+
+.summer {
+    flex-direction: row-reverse;
+}
+
+.winter {
+    flex-direction: row-reverse;
+}
+
+/* Image Entretien Custom*/
+
+.entretienImg {
+    height: 50vh;
+}
+
+
+
+.sec-4 {
+    background: #e7ebe4;
+    width: 100%;
+    min-height: 300px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
 
 .sec-5 {
+    background: #eee;
+    padding: 60px;
     text-align: center;
-    padding: 10px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3)
 }
 
 
-div.spring {
-    padding: 0.6cm;
-    margin: 0.7cm;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    inline-size: 50%;
+
+.teamImg {
+    width: 100px;
+    clip-path: ellipse(50% 50%);
+    margin: auto;
 }
 
-
-div.summer {
-    padding: 0.6cm;
-    margin: 0.7cm;
+.wildersProfil {
     display: flex;
-    align-items: start;
-    justify-content: start;
-    inline-size: 50%;
-}
-
-
-div.fall {
-    padding: 0.6cm;
-    margin: 0.7cm;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    inline-size: 50%;
-}
-
-div.winter {
-    padding: 0.6cm;
-    margin: 0.7cm;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    inline-size: 50%;
+    flex-direction: column;
 }
 
 /*Contact custom*/
@@ -157,10 +192,10 @@ input[type=email] {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
-  }
-  
+}
 
-button{
+
+button {
     background-color: #606C5A;
     color: white;
     padding: 12px;
@@ -169,13 +204,19 @@ button{
     border-radius: 5px;
     cursor: pointer;
     font-size: 13px;
-}
-/*Footer Customisation*/
+  }
+
+
+  /*Footer Customisation*/
 
 footer {
     background: #eee;
     text-align: center;
     padding: 20px;
+}
+
+.socialImg {
+    width: 25px;
 }
 
 footer p {
