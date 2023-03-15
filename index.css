@@ -121,12 +121,6 @@ div.wilders {
     margin-bottom: 130px;
 }
 
-.entretienText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: max-content;
-}
 
 .spring,
 .summer,
@@ -207,6 +201,14 @@ button {
 }
 
 
+/*Contact js error msg*/
+#error-msg {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 /*Footer Customisation*/
 
 footer {
@@ -284,3 +286,19 @@ footer p {
 }
 
 /* End of carrousel */
+
+
+/*Back To Top*/
+
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+.hidden {
+    display: none;
+    opacity: 0%;
+}
