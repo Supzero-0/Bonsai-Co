@@ -298,7 +298,23 @@ footer p {
 
 /* End of carrousel */
 
-@media screen and (max-width : 1224px) {
+
+/*Back To Top*/
+
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+.hidden {
+    display: none;
+    opacity: 0%;
+}
+
+@media screen and (max-width : 768px) {
 
     .spring,
     .summer,
