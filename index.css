@@ -32,6 +32,7 @@ nav {
     align-items: center;
     font-size: larger;
     padding: 10px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
 
 /*Removes bullet points*/
@@ -63,8 +64,7 @@ h1 {
 }
 
 h2 {
-    padding: 0.3cm;
-    margin: 0.4cm;
+    padding: 2rem;
     line-height: 26px;
     text-align: center;
 }
@@ -78,6 +78,7 @@ h3 {
 
 .homeContainer {
     position: relative;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
 
 .imgHome {
@@ -103,45 +104,61 @@ h3 {
 }
 
 .first {
-    width: 100%;
     background: var(--description-color);
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
 
 
 div.wilders {
-    margin: 30px;
+    padding: 30px;
     display: flex;
     justify-content: space-around;
 }
 
 /* Entretien Customs */
 
-.sec-2 {
-    margin-top: 200px;
-    margin-bottom: 130px;
+#entretien {
+    padding: 3rem;
 }
 
 .entretienText {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: max-content;
+    width: 50%;
+}
+
+.entretienText ul li {
+    margin: 30px 0;
 }
 
 .spring,
 .summer,
 .fall,
 .winter {
-    padding: 0.6cm;
-    margin: 0.7cm;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-basis: auto;
+    padding: 5rem;
+}
+
+.spring {
+    background: var(--description-color);
 }
 
 .summer {
     flex-direction: row-reverse;
+}
+
+.fall {
+    background: var(--description-color);
 }
 
 .winter {
@@ -166,9 +183,9 @@ div.wilders {
 
 .sec-5 {
     background: #eee;
-    padding: 60px;
+    padding: 30px;
     text-align: center;
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -182,6 +199,7 @@ div.wilders {
 .wildersProfil {
     display: flex;
     flex-direction: column;
+    margin: 2rem;
 }
 
 /*Contact custom*/
@@ -230,11 +248,14 @@ footer p {
     align-items: center;
     justify-content: center;
     min-height: 80vh;
+    background: var(--description-color);
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    padding: 7rem;
 }
 
 #carrousel {
-    width: 625px;
-    height: 800px;
+    width: 312.5px;
+    height: 400px;
     border: solid 4px #fff;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -242,13 +263,13 @@ footer p {
 }
 
 #carrouselContainer {
-    width: 625px;
-    height: 800px;
+    width: 312.5px;
+    height: 400px;
 }
 
 .picture {
-    width: 625px;
-    height: 800px;
+    width: 312.5px;
+    height: 400px;
     display: inline-block;
     background-size: cover;
 }
@@ -299,4 +320,97 @@ footer p {
 .hidden {
     display: none;
     opacity: 0%;
+}
+
+@media screen and (max-width : 768px) {
+
+    .spring,
+    .summer,
+    .fall,
+    .winter {
+        flex-direction: column;
+    }
+
+    h3 {
+        padding: 0;
+        text-align: center;
+    }
+
+    div.wilders {
+        flex-direction: column;
+    }
+
+    .entretienImg {
+        height: 35vh;
+    }
+
+    .sec-3 {
+        padding: 2rem;
+    }
+
+    #carrousel {
+        width: 312.5px;
+        height: 400px;
+    }
+
+    #carrouselContainer {
+        width: 312.5px;
+        height: 400px;
+    }
+
+    .picture {
+        width: 312.5px;
+        height: 400px;
+    }
+
+    .btn {
+        width: 50px;
+    }
+}
+
+@media screen and (min-device-width : 768px) and (max-width : 1224px) {
+
+    .spring,
+    .summer,
+    .fall,
+    .winter {
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    h3 {
+        padding: 0;
+        text-align: center;
+    }
+
+    div.wilders {
+        flex-direction: column;
+    }
+
+    .entretienImg {
+        height: 35vh;
+    }
+
+    .sec-3 {
+        padding: 4rem;
+    }
+
+    #carrousel {
+        width: 468.75px;
+        height: 600px;
+    }
+
+    #carrouselContainer {
+        width: 468.75px;
+        height: 600px;
+    }
+
+    .picture {
+        width: 468.75px;
+        height: 600px;
+    }
+
+    .btn {
+        width: 75px;
+    }
 }
