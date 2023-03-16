@@ -9,7 +9,7 @@ submitButton.addEventListener('click', () => {
     if (email === "" )  {
         return errorMsg.innerHTML = "Veuillez entrez votre addresse mail.";
     } else if (email === "email@gmail.com") {
-        alert("Connexion réussie !");
+        alert("Bienvenue à la newsletter de Bonsai & Co!");
         return errorMsg.innerHTML = "";
     }
     else {
