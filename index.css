@@ -322,6 +322,22 @@ footer p {
     opacity: 0%;
 }
 
+/* Burger Menu */
+
+.my-button {
+    background-color: transparent;
+    border: 10px;
+    color: black;
+    cursor: pointer;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.my-button:focus {
+    outline: none;
+}
+
 @media screen and (max-width : 768px) {
 
     .spring,
@@ -392,6 +408,29 @@ footer p {
     .back-to-top {
         border-radius: 100%;
     }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+        transform: translate(-160%, 108%);
+        background-color: #e7ebe4;
+        width: 40%;
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    }
+
+    #nav-links li {
+        padding: 5px;
+    }
+
+    .my-button {
+        display: block;
+    }
+
 }
 
 @media screen and (min-device-width : 768px) and (max-width : 1224px) {
