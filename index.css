@@ -16,6 +16,7 @@
 
 body {
     font-family: var(--main-font);
+    font-size: 1.2rem;
 }
 
 .logo {
@@ -30,7 +31,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: larger;
     padding: 10px;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
@@ -61,10 +61,13 @@ h2 {
     padding: 2rem;
     line-height: 26px;
     text-align: center;
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 3rem;
 }
 
 h3 {
-    padding: 0 0 10px 45px;
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 2rem;
 }
 
 
@@ -83,7 +86,8 @@ h3 {
 
 h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
+    font-family: 'Sawarabi Mincho', serif;
 }
 
 /*Sections Customisation*/
@@ -92,17 +96,15 @@ h1 {
     padding: 0.6cm;
     margin: 0.7cm;
     inline-size: 70%;
-    font-size: medium;
 }
 
 .first {
     background: var(--description-color);
     width: 100%;
-    height: 30rem;
+    padding: 3rem 0;
     text-align: justify;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
@@ -113,6 +115,21 @@ div.wilders {
     display: flex;
     justify-content: space-around;
 }
+
+
+/* Team JS hover */
+
+.description p {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: justify;
+}
+
+.description:hover p {
+    opacity: 1
+}
+
+
 
 /* Entretien Customs */
 
@@ -126,8 +143,8 @@ div.wilders {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     width: 50%;
-    height: 100%;
 }
 
 .entretienText ul li {
@@ -148,6 +165,7 @@ div.wilders {
     justify-content: space-around;
     flex-basis: auto;
     padding: 5rem;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
 
 .spring {
@@ -183,7 +201,7 @@ div.wilders {
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
 
-
+/*Img team*/
 
 .teamImg {
     width: 100px;
@@ -195,6 +213,12 @@ div.wilders {
     display: flex;
     flex-direction: column;
     margin: 2rem;
+}
+
+.wildersProfil h3 {
+    text-align: center;
+    margin: 15px;
+    font-family: 'Sawarabi Mincho', serif;
 }
 
 /*Contact custom*/
@@ -339,6 +363,11 @@ footer p {
     .entretienText {
         width: 80%;
         text-align: justify;
+        color: #fff;
+    }
+
+    .entretienText ul li {
+        list-style: url(images/tree-fill-white.svg);
     }
 
     h3 {
@@ -351,19 +380,19 @@ footer p {
     }
 
     .spring {
-        background-image: linear-gradient(to bottom, transparent, 5%, rgba(255, 255, 255, 0.8)), url(images/bonsai-printemps.jpg);
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(0, 0, 0, 0.8)), url(images/bonsai-printemps.jpg);
     }
 
     .summer {
-        background-image: linear-gradient(to bottom, transparent, 5%, rgba(255, 255, 255, 0.8)), url(images/bonsai-ete.jpeg);
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(0, 0, 0, 0.8)), url(images/bonsai-ete.jpeg);
     }
 
     .fall {
-        background-image: linear-gradient(to bottom, transparent, 5%, rgba(255, 255, 255, 0.8)), url(images/bonsai-automne.jpg);
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(0, 0, 0, 0.8)), url(images/bonsai-automne.jpg);
     }
 
     .winter {
-        background-image: linear-gradient(to bottom, transparent, 5%, rgba(255, 255, 255, 0.8)), url(images/bonsai-hiver.jpg);
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(0, 0, 0, 0.8)), url(images/bonsai-hiver.jpg);
     }
 
     .entretienImg {
@@ -391,6 +420,10 @@ footer p {
 
     .btn {
         width: 50px;
+    }
+
+    input[type=email] {
+        width: 40%;
     }
 }
 
