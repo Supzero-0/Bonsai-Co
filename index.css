@@ -113,22 +113,26 @@ div.wilders {
     justify-content: space-around;
 }
 
+
+/* Team JS hover */
+
+.description p {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+  
+.description:hover p {
+    opacity: 1
+}
+  
+
+
 /* Entretien Customs */
 
 #entretien {
     padding: 3rem;
 }
 
-.entretienText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 50%;
-}
-
-.entretienText ul li {
-    margin: 30px 0;
-}
 
 .spring,
 .summer,
@@ -180,7 +184,7 @@ div.wilders {
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
 
-
+/*Img team*/
 
 .teamImg {
     width: 100px;
