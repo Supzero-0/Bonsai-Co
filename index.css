@@ -9,7 +9,7 @@
     --main-font: Arial, Helvetica, sans-serif;
     --nav-color: #f3f3f3;
     --link-color: #606C5A;
-    --description-color: #f6f6f6;
+    --description-color: #eee;
 }
 
 /*Global font*/
@@ -99,6 +99,7 @@ h1 {
     background: var(--description-color);
     width: 100%;
     height: 30rem;
+    text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,6 +118,8 @@ div.wilders {
 
 #entretien {
     padding: 3rem;
+    background: #e7ebe4;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
 
 .entretienText {
@@ -124,10 +127,16 @@ div.wilders {
     flex-direction: column;
     justify-content: space-evenly;
     width: 50%;
+    height: 100%;
 }
 
 .entretienText ul li {
     margin: 30px 0;
+    list-style: url(images/tree-fill.svg);
+}
+
+.entretienImg {
+    width: 40%;
 }
 
 .spring,
@@ -136,7 +145,7 @@ div.wilders {
 .winter {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-basis: auto;
     padding: 5rem;
 }
@@ -147,6 +156,7 @@ div.wilders {
 
 .summer {
     flex-direction: row-reverse;
+    background: #e7ebe4;
 }
 
 .fall {
@@ -155,15 +165,8 @@ div.wilders {
 
 .winter {
     flex-direction: row-reverse;
+    background: #e7ebe4;
 }
-
-/* Image Entretien Custom*/
-
-.entretienImg {
-    height: 50vh;
-}
-
-
 
 .sec-4 {
     background: #e7ebe4;
@@ -254,8 +257,8 @@ footer p {
 }
 
 #carrousel {
-    width: 312.5px;
-    height: 400px;
+    width: 625px;
+    height: 800px;
     border: solid 4px #fff;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -263,13 +266,13 @@ footer p {
 }
 
 #carrouselContainer {
-    width: 312.5px;
-    height: 400px;
+    width: 625px;
+    height: 800px;
 }
 
 .picture {
-    width: 312.5px;
-    height: 400px;
+    width: 625px;
+    height: 800px;
     display: inline-block;
     background-size: cover;
 }
@@ -322,7 +325,7 @@ footer p {
     opacity: 0%;
 }
 
-@media screen and (max-width : 768px) {
+@media screen and (max-width : 1224px) {
 
     .spring,
     .summer,
@@ -334,7 +337,8 @@ footer p {
     }
 
     .entretienText {
-        opacity: 1.5;
+        width: 80%;
+        text-align: justify;
     }
 
     h3 {
