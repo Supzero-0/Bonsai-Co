@@ -32,6 +32,7 @@ nav {
     align-items: center;
     font-size: larger;
     padding: 10px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
 
 /*Removes bullet points*/
@@ -55,16 +56,9 @@ li a:hover {
 
 /*Titles Customisation*/
 
-h1 {
-    padding: 0.3cm;
-    margin: 3cm;
-    text-align: center;
-    font-size: 3rem;
-}
 
 h2 {
-    padding: 0.3cm;
-    margin: 0.4cm;
+    padding: 2rem;
     line-height: 26px;
     text-align: center;
 }
@@ -77,20 +71,19 @@ h3 {
 /* Home Custom */
 
 .homeContainer {
-    position: relative;
-}
-
-.imgHome {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    background-image: url(images/bonsai-co.jpg);
     background-size: cover;
-    width: 100vw;
+    background-position: center;
     height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.titleHome {
-    position: absolute;
-    top: 300px;
-    left: 600px;
-    margin: 0;
+h1 {
+    text-align: center;
+    font-size: 3rem;
 }
 
 /*Sections Customisation*/
@@ -102,23 +95,20 @@ h3 {
     font-size: medium;
 }
 
-.sec-4 h3{
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
-    display: flex;
-    justify-content: center;
-}
-
-.sec-4 p{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 .first {
-    width: 100%;
     background: var(--description-color);
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
 
 
 div.wilders {
-    margin: 30px;
+    padding: 30px;
     display: flex;
     justify-content: space-around;
 }
@@ -139,32 +129,32 @@ div.wilders {
 
 /* Entretien Customs */
 
-.sec-2 {
-    margin-top: 200px;
-    margin-bottom: 130px;
+#entretien {
+    padding: 3rem;
 }
 
-.entretienText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: max-content;
-}
 
 .spring,
 .summer,
 .fall,
 .winter {
-    padding: 0.6cm;
-    margin: 0.7cm;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-basis: auto;
+    padding: 5rem;
+}
+
+.spring {
+    background: var(--description-color);
 }
 
 .summer {
     flex-direction: row-reverse;
+}
+
+.fall {
+    background: var(--description-color);
 }
 
 .winter {
@@ -189,9 +179,9 @@ div.wilders {
 
 .sec-5 {
     background: #eee;
-    padding: 60px;
+    padding: 30px;
     text-align: center;
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
 }
 
 /*Img team*/
@@ -205,6 +195,7 @@ div.wilders {
 .wildersProfil {
     display: flex;
     flex-direction: column;
+    margin: 2rem;
 }
 
 /*Contact custom*/
@@ -261,11 +252,14 @@ footer p {
     align-items: center;
     justify-content: center;
     min-height: 80vh;
+    background: var(--description-color);
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    padding: 7rem;
 }
 
 #carrousel {
-    width: 625px;
-    height: 800px;
+    width: 312.5px;
+    height: 400px;
     border: solid 4px #fff;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -273,13 +267,13 @@ footer p {
 }
 
 #carrouselContainer {
-    width: 625px;
-    height: 800px;
+    width: 312.5px;
+    height: 400px;
 }
 
 .picture {
-    width: 625px;
-    height: 800px;
+    width: 312.5px;
+    height: 400px;
     display: inline-block;
     background-size: cover;
 }
@@ -330,4 +324,94 @@ footer p {
 .hidden {
     display: none;
     opacity: 0%;
+}
+
+@media screen and (max-width : 768px) {
+
+    .spring,
+    .summer,
+    .fall,
+    .winter {
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .entretienText {
+        opacity: 1.5;
+    }
+
+    h3 {
+        padding: 0;
+        text-align: center;
+    }
+
+    div.wilders {
+        flex-direction: column;
+    }
+
+    .spring {
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(255, 255, 255, 0.8)), url(images/bonsai-printemps.jpg);
+    }
+
+    .summer {
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(255, 255, 255, 0.8)), url(images/bonsai-ete.jpeg);
+    }
+
+    .fall {
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(255, 255, 255, 0.8)), url(images/bonsai-automne.jpg);
+    }
+
+    .winter {
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(255, 255, 255, 0.8)), url(images/bonsai-hiver.jpg);
+    }
+
+    .entretienImg {
+        display: none;
+    }
+
+    .sec-3 {
+        padding: 2rem;
+    }
+
+    #carrousel {
+        width: 312.5px;
+        height: 400px;
+    }
+
+    #carrouselContainer {
+        width: 312.5px;
+        height: 400px;
+    }
+
+    .picture {
+        width: 312.5px;
+        height: 400px;
+    }
+
+    .btn {
+        width: 50px;
+    }
+}
+
+@media screen and (min-device-width : 768px) and (max-width : 1224px) {
+
+    #carrousel {
+        width: 468.75px;
+        height: 600px;
+    }
+
+    #carrouselContainer {
+        width: 468.75px;
+        height: 600px;
+    }
+
+    .picture {
+        width: 468.75px;
+        height: 600px;
+    }
+
+    .btn {
+        width: 75px;
+    }
 }
