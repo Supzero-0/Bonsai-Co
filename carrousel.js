@@ -4,7 +4,6 @@ document.body.onload = function () {
     container = document.getElementById("carrouselContainer");
     btnLeft = document.getElementById("btnLeft");
     btnRight = document.getElementById("btnRight");
-    container.style.width = (625 * nbrImg) + "px";
 
     for (i = 1; i <= nbrImg; i++) {
         div = document.createElement("div");
@@ -19,7 +18,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
     btnLeft.onclick = function () {
         if (position > -nbrImg + 1) {
             position--;
-            container.style.transform = "translate(" + position * 312.5 + "px)";
+            container.style.transform = "translate(" + position * 19.5 + "rem)";
             container.style.transition = "all 0.5s ease";
             hide();
         }
@@ -28,7 +27,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
     btnRight.onclick = function () {
         if (position < 0) {
             position++;
-            container.style.transform = "translate(" + position * 312.5 + "px)";
+            container.style.transform = "translate(" + position * 19.5 + "rem)";
             container.style.transition = "all 0.5s ease";
             hide();
         }
@@ -37,7 +36,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
     btnLeft.onclick = function () {
         if (position > -nbrImg + 1) {
             position--;
-            container.style.transform = "translate(" + position * 468.75 + "px)";
+            container.style.transform = "translate(" + position * 29.25 + "rem)";
             container.style.transition = "all 0.5s ease";
             hide();
         }
@@ -46,7 +45,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
     btnRight.onclick = function () {
         if (position < 0) {
             position++;
-            container.style.transform = "translate(" + position * 468.75 + "px)";
+            container.style.transform = "translate(" + position * 29.25 + "rem)";
             container.style.transition = "all 0.5s ease";
             hide();
         }
@@ -55,7 +54,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
     btnLeft.onclick = function () {
         if (position > -nbrImg + 1) {
             position--;
-            container.style.transform = "translate(" + position * 625 + "px)";
+            container.style.transform = "translate(" + position * 39 + "rem)";
             container.style.transition = "all 0.5s ease";
             hide();
         }
@@ -64,7 +63,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
     btnRight.onclick = function () {
         if (position < 0) {
             position++;
-            container.style.transform = "translate(" + position * 625 + "px)";
+            container.style.transform = "translate(" + position * 39 + "rem)";
             container.style.transition = "all 0.5s ease";
             hide();
         }

@@ -75,7 +75,7 @@ h3 {
 
 .homeContainer {
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
-    background-image: url(images/bonsai-co.jpg);
+    background-image: linear-gradient(to bottom, transparent, 25%, rgba(255, 255, 255, 0.5)), url(images/bonsai-co.jpg);
     background-size: cover;
     background-position: center;
     height: 92vh;
@@ -274,8 +274,8 @@ footer p {
 }
 
 #carrousel {
-    width: 625px;
-    height: 800px;
+    width: 39rem;
+    height: 50rem;
     border: solid 4px #fff;
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -283,13 +283,13 @@ footer p {
 }
 
 #carrouselContainer {
-    width: 625px;
-    height: 800px;
+    width: 234rem;
+    height: 50rem;
 }
 
 .picture {
-    width: 625px;
-    height: 800px;
+    width: 39rem;
+    height: 50rem;
     display: inline-block;
     background-size: cover;
 }
@@ -418,18 +418,18 @@ footer p {
     }
 
     #carrousel {
-        width: 312.5px;
-        height: 400px;
+        width: 19.5rem;
+        height: 25rem;
     }
 
     #carrouselContainer {
-        width: 312.5px;
-        height: 400px;
+        width: 117rem;
+        height: 25rem;
     }
 
     .picture {
-        width: 312.5px;
-        height: 400px;
+        width: 19.5rem;
+        height: 25rem;
     }
 
     .btn {
@@ -452,7 +452,7 @@ footer p {
 
     nav ul.show {
         display: flex;
-        transform: translate(-160%, 108%);
+        transform: translate(-155%, 108%);
         background-color: #e7ebe4;
         width: 40%;
         box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
@@ -471,18 +471,18 @@ footer p {
 @media screen and (min-device-width : 768px) and (max-width : 1224px) {
 
     #carrousel {
-        width: 468.75px;
-        height: 600px;
+        width: 29.25rem;
+        height: 37.5rem;
     }
 
     #carrouselContainer {
-        width: 468.75px;
-        height: 600px;
+        width: 175.5rem;
+        height: 37.5rem;
     }
 
     .picture {
-        width: 468.75px;
-        height: 600px;
+        width: 29.25rem;
+        height: 37.5rem;
     }
 
     .btn {
