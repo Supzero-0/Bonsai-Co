@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Style font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/bonsai-icon.svg" />
+    <title>Bonsai & Co</title>
+</head>
+
+<body>
+    <nav>
+
+        <button class="my-button" id="my-button">
+            <img src="images/bonsai-icon.svg" alt="logo">
+        </button>
+        <ul id="nav-links">
+            <li><a href="#description">Description</a></li>
+            <li><a href="#entretien">Entretien</a></li>
+            <li><a href="#team">L'équipe</a></li>
+            <li><a href="#contactUs">Contactez-nous</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="sec-1">
+            <div class="homeContainer">
+                <h1>Bonsaï & Co</h1>
+            </div>
+            <div class="first">
+                <h2 id="description">Description</h2>
+                <p>Née en chine il y a une quinzaine de siècles, puis introduite au Japon par des moines bouddhistes
+                    zen, la culture du bonsaï ("plante dans un pot" en japonais) représente aujourd'hui une distraction
+                    très
+                    prisée en Occident.<br>
+                    Faisant appel à la sensibilité et à la patience, car les plus beaux
+                    spécimens sont le fruit d'un travail de longue haleine, l'art du bonsaï demande des soins simples,
+                    mais quotidiens qu'il est nécessaire de bien connaître.<br>
+                    Les bonsaïs sont en fait des formes stylisées d'arbres à l'état sauvage.<br>
+                    Les relations entre la plante et son conteneur sont primordiales pour créer une impression
+                    d'unité.<br>
+                    En effet, l'intérêt du bonsaï ne réside pas uniquement dans son feuillage ou dans sa floraison
+                    éclatante, mais aussi et surtout dans le tableau que forment la plante et le pot dans lequel elle
+                    aura été mise en place. </p>
+            </div>
+        </section>
+
+        <section class="sec-2">
+            <h2 id="entretien">Entretien</h2>
+            <div class="spring">
+                <div class="entretienText">
+                    <h3>Printemps</h3>
+                    <ul>
+                        <li>Préférez l’eau de pluie pour arroser votre bonsaï, assurez-lui un arrosage complet, à
+                            renouveler dès que le substrat a séché en surface.</li>
+                        <li>Pincez les nouvelles pousses.</li>
+                        <li>Apportez de l’engrais liquide de préférence organique, cette forme évite le surdosage qui
+                            occasionne des brûlures au niveau des racines.</li>
+                    </ul>
+                </div>
+                <img src="images/bonsai-printemps.jpg" alt="Bonsai Printemps" class="entretienImg">
+            </div>
+            <div class="summer">
+                <div class="entretienText">
+                    <h3>Eté</h3>
+                    <ul>
+                        <li>Sortez votre bonsaï. Même si celle-ci est exposé à la pluie, vérifiez qu'elle a
+                            bien humidifié la motte en profondeur.</li>
+                        <li>Arrosez jusqu’à 2 fois par jour en été. L’arrosage du bonsaï s’effectue régulièrement par
+                            pluie fine au-dessus des feuilles (avec un arrosoir spécial bonsaï par exemple) lorsque la
+                            terre de surface est sèche.</li>
+                        <li>Diminuez les apports d’engrais (équilibré en NPK).</li>
+                    </ul>
+                </div>
+                <img src="images/bonsai-ete.jpeg" alt="Bonsai Eté" class="entretienImg">
+            </div>
+            <div class="fall">
+                <div class="entretienText">
+                    <h3>Automne</h3>
+                    <ul>
+                        <li>Attendez que le substrat soit légèrement sec en surface avant d’arroser à nouveau.</li>
+                        <li>Arrosez votre bonsaï en pluie fine au-dessus du feuillage. Évitez la stagnation de l’eau qui
+                            peut provoquer le pourrissement des racines.</li>
+                        <li>Ajoutez à l’eau d’arrosage un engrais liquide spécial bonsaï (respectez les dosages).</li>
+                    </ul>
+                </div>
+                <img src="images/bonsai-automne.jpg" alt="Bonsai Automne" class="entretienImg">
+            </div>
+            <div class="winter">
+                <div class="entretienText">
+                    <h3>Hiver</h3>
+                    <ul>
+                        <li>Diminuez la fréquence d’arrosage.</li>
+                        <li>Gare au chauffage qui sèche l’air ambiant. Le bonsaï en effet apprécie une bonne hygrométrie
+                            : posez le pot du bonsaï dans une soucoupe profonde remplie de graviers et d’un peu d’eau (à
+                            renouveler régulièrement).</li>
+                        <li>Ne donnez pas d’engrais à votre bonsaï.</li>
+                    </ul>
+                </div>
+                <img src="images/bonsai-hiver.jpg" alt="Bonsai Hiver" class="entretienImg">
+            </div>
+        </section>
+
+        <section class="sec-3">
+            <img src="images/button.png" class="btn" id="btnLeft">
+            <div id="carrousel">
+                <div id="carrouselContainer"></div>
+            </div>
+            <img src="images/button.png" class="btn" id="btnRight">
+        </section>
+
+        <section class="sec-4">
+            <h2 id="team">L'équipe</h2>
+
+            <div class="wilders">
+                <div class="wildersProfil">
+                    <img src="images/aya.jpg" class="teamImg">
+                    <h3>Aya</h3>
+                    <div class="description">
+                        <p id="pic-one">Véritable icône de Bonsaï & Co, elle ne trouve le repos qu’après avoir lancé de
+                            nouvelles fonctionnalités sur notre site.
+                            Elle vous prendra par la main pour vous guider parmi l’immense variété des bonsaïs. </p>
+                    </div>
+                </div>
+
+                <div class="wildersProfil">
+                    <img src="images/benoit.jpeg" class="teamImg">
+                    <h3>Benoit</h3>
+                    <div class="description">
+                        <p id="pic-two">Prêt à se faire hara-kiri pour mener les projets de la team (enfin sa partie) à
+                            terme, il reste le témoin et narrateur de l’aventure Bonsaï & Co.
+                            Il vous contera la passionnante histoire de cette plante atypique.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="wildersProfil">
+                    <img src="images/mathieu.jpg" class="teamImg">
+                    <h3>Mathieu</h3>
+                    <div class="description">
+                        <p id="pic-three">Aussi à l’aise sur l’entretien du code que de nos plantes préférées, il mène
+                            notre projet de main de maître.
+                            Une question sur le soin de vos bonsaïs? Votre sensei est avancé!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-5">
+            <h2 id="contactUs">Contactez-nous</h2>
+            <div>
+                <input id="mailContact" type="email" name="mailContact" placeholder="email@exemple.com">
+                <button type="submit" id="submitButton">Contactez-nous</button>
+            </div>
+            <p id="error-msg"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="https://www.facebook.com/"><img src="images/facebook.svg" class="socialImg"></a>
+            <a href="https://twitter.com/"><img src="images/twitter.svg" class="socialImg"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram.svg" class="socialImg"></a>
+        </div>
+        <p>© 2023 Copyright:<a href="https://www.wildcodeschool.com/fr-FR">Wild Code School 2023</a></p>
+    </footer>
+    <button class="back-to-top hidden"><img class="back-to-top-img" src="images/backtotop.svg"></button>
+</body>
+
+<script src="carrousel.js"></script>
+<script src="contact.js"></script>
+<script src="hover.js"></script>
+<script src="backtotop.js"></script>
+<script src="burgermenu.js"></script>
+
+</html>

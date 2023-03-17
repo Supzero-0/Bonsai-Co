@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS variables*/
+
+:root {
+    --main-font: Arial, Helvetica, sans-serif;
+    --nav-color: #f3f3f3;
+    --link-color: #606C5A;
+    --description-color: #eee;
+}
+
+/*Global font*/
+
+body {
+    font-family: var(--main-font);
+    font-size: 1.2rem;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+/*Navigation Bar Customisation*/
+
+nav {
+    border: 1px solid #e7e7e7;
+    background-color: var(--nav-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+/*Removes bullet points*/
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+/*Links Customisation*/
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 8px;
+}
+
+li a:hover {
+    background-color: #d0d0d0;
+}
+
+/*Titles Customisation*/
+
+
+h2 {
+    padding: 2rem;
+    line-height: 52px;
+    text-align: center;
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 3rem;
+}
+
+h3 {
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 2rem;
+}
+
+
+/* Home Custom */
+
+.homeContainer {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to bottom, transparent, 25%, rgba(255, 255, 255, 0.5)), url(images/bonsai-co.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Sawarabi Mincho', serif;
+}
+
+/*Sections Customisation*/
+
+.sec-1 p {
+    padding: 0.6cm;
+    margin: 0.7cm;
+    inline-size: 70%;
+}
+
+.first {
+    background: var(--description-color);
+    width: 100%;
+    padding: 3rem 0;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Team JS hover */
+
+.description p {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: justify;
+}
+
+.description:hover p {
+    opacity: 1
+}
+
+/* Entretien Customs */
+
+#entretien {
+    padding: 3rem;
+    background: #e7ebe4;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+.entretienText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+.entretienText ul li {
+    margin: 30px 0;
+    list-style: url(images/tree-fill.svg);
+}
+
+.entretienImg {
+    width: 40%;
+}
+
+.spring,
+.summer,
+.fall,
+.winter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: auto;
+    padding: 5rem;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+.spring {
+    background: var(--description-color);
+}
+
+.summer {
+    flex-direction: row-reverse;
+    background: #e7ebe4;
+}
+
+.fall {
+    background: var(--description-color);
+}
+
+.winter {
+    flex-direction: row-reverse;
+    background: #e7ebe4;
+}
+
+.sec-4 {
+    background: #e7ebe4;
+    width: 100%;
+    min-height: 300px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+
+.sec-5 {
+    background: #eee;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+/*Img team*/
+
+.teamImg {
+    width: 100px;
+    clip-path: ellipse(50% 50%);
+    margin: auto;
+}
+
+.wilders {
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wildersProfil {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    margin: 2rem;
+}
+
+.wildersProfil h3 {
+    text-align: center;
+    margin: 15px;
+    font-family: 'Sawarabi Mincho', serif;
+}
+
+/*Contact custom*/
+
+input[type=email] {
+    width: 20%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #606C5A;
+    color: white;
+    padding: 12px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/*Contact js error msg*/
+#error-msg {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Footer Customisation*/
+
+footer {
+    background: #eee;
+    text-align: center;
+    padding: 20px;
+}
+
+.socialImg {
+    width: 25px;
+}
+
+footer p {
+    padding: 20px;
+}
+
+/* Css for carrousel */
+
+.sec-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background: var(--description-color);
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    padding: 7rem;
+}
+
+#carrousel {
+    width: 39rem;
+    height: 50rem;
+    border: solid 4px #fff;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+#carrouselContainer {
+    width: 234rem;
+    height: 50rem;
+}
+
+.picture {
+    width: 39rem;
+    height: 50rem;
+    display: inline-block;
+    background-size: cover;
+}
+
+.btn {
+    margin: auto;
+    width: 100px;
+    cursor: pointer;
+}
+
+#btnLeft {
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+#btnRight {
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+#btnLeft:hover {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+#btnRight:hover {
+    transform: rotate(0deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+/* End of carrousel */
+
+
+/*Back To Top*/
+
+.back-to-top {
+    position: fixed;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+.hidden {
+    display: none;
+    opacity: 0%;
+}
+
+/* Burger Menu */
+
+.my-button {
+    background-color: transparent;
+    border: 10px;
+    color: black;
+    cursor: pointer;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.my-button:focus {
+    outline: none;
+}
+
+@media screen and (max-width : 1224px) {
+
+    .spring,
+    .summer,
+    .fall,
+    .winter {
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .entretienText {
+        width: 80%;
+        text-align: justify;
+        color: #fff;
+    }
+
+    .entretienText ul li {
+        list-style: url(images/tree-fill-white.svg);
+    }
+
+    h3 {
+        padding: 0;
+        text-align: center;
+    }
+
+    .wilders {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wildersProfil {
+        max-width: 80%;
+    }
+
+    .spring {
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(0, 0, 0, 0.8)), url(images/bonsai-printemps.jpg);
+    }
+
+    .summer {
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(0, 0, 0, 0.8)), url(images/bonsai-ete.jpeg);
+    }
+
+    .fall {
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(0, 0, 0, 0.8)), url(images/bonsai-automne.jpg);
+    }
+
+    .winter {
+        background-image: linear-gradient(to bottom, transparent, 5%, rgba(0, 0, 0, 0.8)), url(images/bonsai-hiver.jpg);
+    }
+
+    .entretienImg {
+        display: none;
+    }
+
+    .sec-3 {
+        padding: 2rem;
+    }
+
+    #carrousel {
+        width: 19.5rem;
+        height: 25rem;
+    }
+
+    #carrouselContainer {
+        width: 117rem;
+        height: 25rem;
+    }
+
+    .picture {
+        width: 19.5rem;
+        height: 25rem;
+    }
+
+    .btn {
+        width: 50px;
+    }
+
+    input[type=email] {
+        width: 40%;
+    }
+
+    .back-to-top {
+        border-radius: 100%;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+        transform: translate(-155%, 108%);
+        background-color: #e7ebe4;
+        width: 40%;
+        box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    }
+
+    #nav-links li {
+        padding: 5px;
+    }
+
+    .my-button {
+        display: block;
+    }
+
+}
+
+@media screen and (min-device-width : 768px) and (max-width : 1224px) {
+
+    #carrousel {
+        width: 29.25rem;
+        height: 37.5rem;
+    }
+
+    #carrouselContainer {
+        width: 175.5rem;
+        height: 37.5rem;
+    }
+
+    .picture {
+        width: 29.25rem;
+        height: 37.5rem;
+    }
+
+    .btn {
+        width: 75px;
+    }
+}
